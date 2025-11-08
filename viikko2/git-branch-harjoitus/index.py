@@ -1,3 +1,5 @@
+# tehdään alussa importit
+
 from logger import logger
 from summa import summa
 from erotus import erotus
@@ -10,4 +12,3 @@ print(f"{summa(x, y)}")
 print(f"{erotus(x, y)}")
 
 logger("lopetetaan")
-
