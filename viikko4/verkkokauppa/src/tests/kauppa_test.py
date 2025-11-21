@@ -91,7 +91,7 @@ class TestKauppa(unittest.TestCase):
 
         self.pankki_mock.tilisiirto.assert_called_with("pekka", 42, "12345", "33333-44455", 10)
 
-    def test_uusi_viitenumero_jokaiselle_maksutapahtumalle(self):
+    def test_jokaiselle_maksutapahtumalle_uusi_viitenumero(self):
         self.kauppa.aloita_asiointi()
         self.kauppa.lisaa_koriin(1)
         self.kauppa.tilimaksu("pekka", "12345")
